@@ -39,6 +39,12 @@ parse_fields_map(Data) when is_list(Data) ->
         reference_num => substr(Data, 77, 12)}
     end.
 
+
+% convert binary data string to map
+parse_fields_map_bin(Data) when is_binary(Data) ->
+    parse_fields_map(binary_to_list(Data)).
+
+
 % function that put target data to target database
 % erlang jiffy library is required in this function.
 % Username, Password, DBname are user defined strings for target database
