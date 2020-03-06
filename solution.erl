@@ -61,10 +61,10 @@ put_map_data(Username, Password, DBname, Data) when is_map(Data), is_list(Userna
 
 % run and show the result of parsing example data with 'parse_fields_map' 
 parse_examples() ->
-    Data_1 = "0000011319353459011000000000020000080403001305102808301308040804123456123456192165102801", 
-    Data_2 = "0000011519355459011000000000041000080403001305102808301308040804123456123456192165102839", 
+    Data_1 = <<"0000011319353459011000000000020000080403001305102808301308040804123456123456192165102801">>, 
+    Data_2 = <<"0000011519355459011000000000041000080403001305102808301308040804123456123456192165102839">>, 
     io:format("result for first string:\n"), 
-    erlang:display(parse_fields_map(Data_1)), 
+    erlang:display(parse_fields_map_bin(Data_1)), 
     io:format("result for second string:\n"), 
-    erlang:display(parse_fields_map(Data_2)), 
+    erlang:display(parse_fields_map_bin(Data_2)), 
     ok.
