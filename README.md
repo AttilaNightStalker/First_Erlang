@@ -1,5 +1,4 @@
-# First_Erlang
-A simple erlang test project
+# First_Erlang -- A simple erlang test project
 
 All the code is in 'solution.erl' file. 
 
@@ -9,4 +8,7 @@ For Problem#2, the major solution function is 'put_map_data' which encode the MA
 
 'parse_examples' demostrate the result of parsing two example strings.
 
+'json_result.png' in this repo is the screen shot of my local database's json files.
+
+There are more detailed descriptions in the comment of code. 
 
