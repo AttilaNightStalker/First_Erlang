@@ -1,5 +1,5 @@
 -module(solution).
--export([parse_fields_map/1, put_map_data/4, parse_examples/0]).
+-export([parse_fields_map/1, parse_fields_map_bin/1, put_map_data/4, parse_examples/0]).
 -import(string, [substr/3]).
 
 
