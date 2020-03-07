@@ -1,4 +1,4 @@
-# First_Erlang -- A simple erlang test project
+# First_Erlang -- Nexos code challenge project
 
 All the code is in 'solution.erl' file. 
 
